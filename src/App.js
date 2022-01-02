@@ -1,24 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import ExpneseItem from './components/Expense';
+import Inner from './components/Body';
+import {CardList} from './components/cardlist.component';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    // <div className="App" > 
+    <div >
+      <header className='App'>
+      <ExpneseItem/>
       </header>
+    <div >
+    <h1 className='Chalo'>Hey Filter the Monsters</h1>
+      <Inner/>  
+       </div>
     </div>
+    // </div>
+
+
   );
 }
 
